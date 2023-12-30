@@ -1,0 +1,236 @@
+<!-- 
+    Develop Tool - Tailwind Play
+    https://play.tailwindcss.com/
+
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rediscover Tours Forms</title>
+  <meta name="description" content="Rediscover Tours Forms" />
+  <meta name="author" content="Rediscover Tours" />
+
+  <!--
+   <link rel="stylesheet" href="css/tailwind.css">
+  -->
+
+  <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- jQueryのCDNを読み込む -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <!-- Quote Request Form -->
+
+  <section class="bg-blueGray-50 py-1">
+    <div class="mx-auto mt-6 w-full px-4 lg:w-8/12">
+      <div class="bg-blueGray-100 relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg border-0 shadow-lg">
+        <div class="mb-0 rounded-t bg-white px-6 py-6">
+          <div class="flex justify-between text-center">
+            <h6 class="text-blueGray-700 text-xl font-bold">Quote Request Form</h6>
+          </div>
+        </div>
+        <div class="flex-auto px-4 py-10 pt-0 lg:px-10">
+          <form id="quote_request_form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYThXNaP1HZPC7oyvFFnWGkd0fejxA63r-d2ov6tC6927bMg/formResponse">
+            <h6 class="input-group-title text-blueGray-400 mb-6 mt-3 text-sm font-bold uppercase">Traveler 1</h6>
+
+            <div id="inputs">
+              <div class="flex flex-wrap input-group">
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Full Passport Name* </label>
+                    <input id="full_passport_name" name="full_passport_name" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="John Smith" required />
+                  </div>
+                </div>
+
+                <div class="lg:w-6/12 w-full px-4">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase">Gender</label>
+                    <select id="gender" name="gender" class="text-blueGray-600 placeholder-blueGray-300 placeholder-blueGray-300 text-blueGray-600 mb-6 block w-full rounded border-0 bg-white p-2 px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring">
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Date of Birth </label>
+                    <input id="date_of_birth" name="date_of_birth" type="date" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="YYYY/MM/DD" value="" />
+                  </div>
+                </div>
+
+                <div class="lg:w-6/12 w-full px-4">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase">Tatoo**</label>
+                    <select id="tatoo" class="text-blueGray-600 placeholder-blueGray-300 placeholder-blueGray-300 text-blueGray-600 mb-6 block w-full rounded border-0 bg-white p-2 px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring">
+                      <option selected value="no">No. I don't have tatoos</option>
+                      <option value="yes">Yes. I've got tatoos</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="lg:w-12/12 w-full px-4">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Dietary Requirements </label>
+                    <textarea id="dietary_requirements" name="dietary_requirements" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="Tell us about your dietary requiremnts"></textarea>
+                  </div>
+                </div>
+
+                <div class="lg:w-12/12 w-full px-4">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Medical Conditions (including allergies) </label>
+                    <textarea id="medical_conditions" name="medical_conditions" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="Tell us about your medical conditions"></textarea>
+                  </div>
+                </div>
+
+                <div class="lg:w-12/12 w-full px-4">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Mobility Issues </label>
+                    <textarea id="mobility_issues" name="mobility_issues" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="Tell us about your mobility issues"></textarea>
+                  </div>
+                </div>
+
+              </div>
+
+              <hr class="border-b-1 border-blueGray-300 mt-6" />
+
+            </div>
+
+            <div class="w-full px-4 lg:w-12/12 mt-6">
+              <div class="relative mb-3 w-full text-sm text-blueGray-600">
+                <p>*Names must be exactly as they appear in your passport.</p>
+                <p>**Tattoos are strongly associated with yakuza or the crime syndicate and some ryokan inns do not allow
+                  travelers with tattoos. This is unfair but outside our influence.</p>
+              </div>
+            </div>
+
+
+            <div class="w-full text-center mt-6">
+              <div class="sm:block">
+                <button id="add" class="bg-indigo-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                  Add person
+                </button>
+              </div>
+            </div>
+
+            <div class="w-full text-center mt-6">
+              <div class="sm:block">
+                <input id="submit-quote-request" class="mr-1 rounded bg-pink-500 px-4 py-2 text-xs font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:shadow-md focus:outline-none active:bg-pink-600" type="submit" value="Submit"></button>
+              </div>
+            </div>
+
+          </form>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    var travelers_count = 1;
+
+    // 人を追加するボタンがクリックされた時の処理
+    $("#add").click(function () {
+
+      var newInputGroupTitle = $(".input-group-title:first").clone();
+      travelers_count += 1;
+      newInputGroupTitle.text("Traveler" + travelers_count);
+      console.log(newInputGroupTitle);
+
+      // 1人分の入力欄を複製する
+      var newInputGroup = $(".input-group:first").clone();
+      // 複製した入力欄の値を空にする
+      newInputGroup.find("input").val("");
+      // 入力欄を格納するdivに追加する
+      $("#inputs").append(newInputGroupTitle);
+      $("#inputs").append(newInputGroup);
+      $("#inputs").append('<hr class="border-b-1 border-blueGray-300 mt-6" />');
+    });
+
+    // パラメータに対する操作
+    $(document).ready(function () {
+      // URLパラメータを取得する
+      var params = new URLSearchParams(window.location.search);
+      
+      // ページ読み込み時にURLパラメータにデフォルトの人数が指定されていたら、その人数分だけ入力欄を追加する
+      // デフォルトの人数を取得する
+      var defaultNum = params.get("defaultNum");
+      // デフォルトの人数が数値であれば、その人数分だけ人を追加するボタンをクリックする
+      if (Number.isInteger(parseInt(defaultNum))) {
+        for (var i = 0; i < defaultNum - 1; i++) {
+          $("#add").click();
+        }
+      }
+
+    });
+
+    // 送信ボタンがクリックされた時の処理
+    $("#submit-quote-request").click(function (event) {
+      // フォームのデフォルトの送信動作をキャンセルする
+      event.preventDefault();
+      // 入力されたすべての人の情報を格納する配列を作成する
+      var data = [];
+      // 入力欄の数だけ繰り返す
+      $(".input-group").each(function () {
+        // 1人分の情報を格納するオブジェクトを作成する
+        var person = {};
+        // inputの内容を取得してオブジェクトに追加する
+        person.full_passport_name = $(this).find("#full_passport_name").val();
+        person.gender = $(this).find("#gender").val();
+        person.date_of_birth = $(this).find("#date_of_birth").val();
+        person.tatoo = $(this).find("#tatoo").val();
+        person.dietary_requirements = $(this).find("#dietary_requirements").val();
+        person.medical_conditions = $(this).find("#medical_conditions").val();
+        person.mobility_issues = $(this).find("#mobility_issues").val();
+        // 配列にオブジェクトを追加する
+        data.push(person);
+      });
+      // 配列をJSONフォーマットに変換する
+      var dataJSON = JSON.stringify(data);
+
+      console.log(dataJSON);
+
+      // URLパラメータを取得してTOUR IDをセット
+      var params = new URLSearchParams(window.location.search);
+      var tourID = params.get("tourID");
+
+
+      // POSTリクエストを送信する
+      $.ajax({
+        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYThXNaP1HZPC7oyvFFnWGkd0fejxA63r-d2ov6tC6927bMg/formResponse",
+        data: {
+          "entry.2100696722" : tourID,
+          "entry.1723559117": dataJSON
+        },
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+          0: function () {
+            //成功した際の処理を書きます。
+            alert("sucsess 0 " + dataJSON);
+          },
+          200: function () {
+            //成功した際の処理を書きます。
+
+            alert("sucsess 200 " + dataJSON);
+          }
+        }
+      });
+
+    });
+
+  </script>
+</body>
+
+</html>

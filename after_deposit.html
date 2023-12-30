@@ -1,0 +1,297 @@
+<!-- 
+    Develop Tool - Tailwind Play
+    https://play.tailwindcss.com/
+
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rediscover Tours Forms</title>
+  <meta name="description" content="Rediscover Tours Forms" />
+  <meta name="author" content="Rediscover Tours" />
+
+  <!--
+   <link rel="stylesheet" href="css/tailwind.css">
+  -->
+
+  <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- jQueryのCDNを読み込む -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <!-- After Deposit Form -->
+
+  <section class="bg-blueGray-50 py-1">
+    <div class="mx-auto mt-6 w-full px-4 lg:w-8/12">
+      <div class="bg-blueGray-100 relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg border-0 shadow-lg">
+        <div class="mb-0 rounded-t bg-white px-6 py-6">
+          <div class="flex justify-between text-center">
+            <h6 class="text-blueGray-700 text-xl font-bold">After Deposit Form</h6>
+          </div>
+        </div>
+        <div class="flex-auto px-4 py-10 pt-0 lg:px-10">
+          <form id="after_deposit_form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYThXNaP1HZPC7oyvFFnWGkd0fejxA63r-d2ov6tC6927bMg/formResponse">
+            <h6 class="input-group-title text-blueGray-400 mb-6 mt-3 text-sm font-bold uppercase">Traveler 1</h6>
+
+            <div id="inputs">
+              <div class="flex flex-wrap input-group">
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Passport Number </label>
+                    <input id="passport_number" name="passport_number" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="TK1234567" required />
+                  </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Passport Country </label>
+                    <input id="passport_country" name="passport_country" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="TK1234567" required />
+                  </div>
+                </div>
+
+                <hr class="w-full mx-4 border-b-1 border-blueGray-300 mt-6 mb-6" />
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Arrival Date </label>
+                    <input id="arrival_date" name="arrival_date" type="date" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="YYYY/MM/DD" value="" />
+                  </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Arrival Time </label>
+                    <input id="arrival_time" name="arrival_time" type="time" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" value="" />
+                  </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Arrival Flight Number </label>
+                    <input id="arrival_flight_number" name="arrival_flight_number" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="NH836" required />
+                  </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Arrival Airport </label>
+                    <input id="arrival_airport" name="arrival_airport" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
+                  </div>
+                </div>
+
+                <hr class="w-full mx-4 border-b-1 border-blueGray-300 mt-6 mb-6" />
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Departure Date </label>
+                    <input id="departure_date" name="departure_date" type="date" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="YYYY/MM/DD" value="" />
+                  </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Departure Time </label>
+                    <input id="departure_time" name="departure_time" type="time" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" value="" />
+                  </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Departure Flight Number </label>
+                    <input id="departure_flight_number" name="departure_flight_number" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="NH836" required />
+                  </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Departure Airport </label>
+                    <input id="departure_airport" name="departure_airport" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
+                  </div>
+                </div>
+
+
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> ARRIVAL </label>
+                    <input id="" name="" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
+                  </div>
+                </div>
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> ARRIVAL </label>
+                    <input id="" name="" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
+                  </div>
+                </div>
+                <div class="w-full px-4 lg:w-6/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> ARRIVAL </label>
+                    <input id="" name="" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
+                  </div>
+                </div>
+
+
+
+                <div class="lg:w-6/12 w-full px-4">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase">Tatoo**</label>
+                    <select id="tatoo" class="text-blueGray-600 placeholder-blueGray-300 placeholder-blueGray-300 text-blueGray-600 mb-6 block w-full rounded border-0 bg-white p-2 px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring">
+                      <option selected value="no">No. I don't have tatoos</option>
+                      <option value="yes">Yes. I've got tatoos</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="lg:w-12/12 w-full px-4">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase">
+                      Dietary Requirements </label>
+                    <textarea id="dietary_requirements" name="dietary_requirements" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="Tell us about your dietary requiremnts"></textarea>
+                  </div>
+                </div>
+
+                <div class="lg:w-12/12 w-full px-4">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Medical Conditions (including allergies) </label>
+                    <textarea id="medical_conditions" name="medical_conditions" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="Tell us about your medical conditions"></textarea>
+                  </div>
+                </div>
+
+                <div class="lg:w-12/12 w-full px-4">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Mobility Issues </label>
+                    <textarea id="mobility_issues" name="mobility_issues" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="Tell us about your mobility issues"></textarea>
+                  </div>
+                </div>
+
+              </div>
+              <hr class="border-b-1 border-blueGray-300 mt-6" />
+
+
+            </div>
+
+            <div class="w-full text-center mt-6">
+              <div class="sm:block">
+                <button id="add" class="bg-indigo-500 text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150" type="button">
+                  Add person
+                </button>
+              </div>
+            </div>
+
+            <div class="w-full text-center mt-6">
+              <div class="sm:block">
+                <input id="submit-after-deposit" class="mr-1 rounded bg-pink-500 px-4 py-2 text-xs font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:shadow-md focus:outline-none active:bg-pink-600" type="submit" value="Submit"></button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script>
+    var travelers_count = 1;
+
+    // 人を追加するボタンがクリックされた時の処理
+    $("#add").click(function () {
+
+      var newInputGroupTitle = $(".input-group-title:first").clone();
+      travelers_count += 1;
+      newInputGroupTitle.text("Traveler" + travelers_count);
+      console.log(newInputGroupTitle);
+
+      // 1人分の入力欄を複製する
+      var newInputGroup = $(".input-group:first").clone();
+      // 複製した入力欄の値を空にする
+      newInputGroup.find("input").val("");
+      // 入力欄を格納するdivに追加する
+      $("#inputs").append(newInputGroupTitle);
+      $("#inputs").append(newInputGroup);
+      $("#inputs").append('<hr class="border-b-1 border-blueGray-300 mt-6" />');
+    });
+
+    // パラメータに対する操作
+    $(document).ready(function () {
+      // URLパラメータを取得する
+      var params = new URLSearchParams(window.location.search);
+      
+      // ページ読み込み時にURLパラメータにデフォルトの人数が指定されていたら、その人数分だけ入力欄を追加する
+      // デフォルトの人数を取得する
+      var defaultNum = params.get("defaultNum");
+      // デフォルトの人数が数値であれば、その人数分だけ人を追加するボタンをクリックする
+      if (Number.isInteger(parseInt(defaultNum))) {
+        for (var i = 0; i < defaultNum - 1; i++) {
+          $("#add").click();
+        }
+      }
+
+    });
+
+    // 送信ボタンがクリックされた時の処理
+    $("#submit-after-deposit").click(function (event) {
+      // フォームのデフォルトの送信動作をキャンセルする
+      event.preventDefault();
+      // 入力されたすべての人の情報を格納する配列を作成する
+      var data = [];
+      // 入力欄の数だけ繰り返す
+      $(".input-group").each(function () {
+        // 1人分の情報を格納するオブジェクトを作成する
+        var person = {};
+        // inputの内容を取得してオブジェクトに追加する
+        person.passport_number = $(this).find("#passport_number").val();
+        person.passport_country = $(this).find("#passport_country").val();
+        person.arrival_date = $(this).find("#arrival_date").val();
+        person.arrival_time = $(this).find("#arrival_time").val();
+        person.arrival_flight_number = $(this).find("#arrival_flight_number").val();
+        person.arrival_airport = $(this).find("#arrival_airport").val();
+        // 配列にオブジェクトを追加する
+        data.push(person);
+      });
+      // 配列をJSONフォーマットに変換する
+      var dataJSON = JSON.stringify(data);
+
+      console.log(dataJSON);
+
+      // URLパラメータを取得してTOUR IDをセット
+      var params = new URLSearchParams(window.location.search);
+      var tourID = params.get("tourID");
+
+      // POSTリクエストを送信する
+      $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSc18wynEP5RLFrsHtkFa0s6J2YHoHvP0C2cutEr19zGGicPIA/formResponse",
+        data: {
+          "entry.1650804623" : tourID,
+          "entry.673500830": dataJSON
+        },
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+          0: function () {
+            //成功した際の処理を書きます。
+            alert("sucsess 0 " + dataJSON);
+          },
+          200: function () {
+            //成功した際の処理を書きます。
+
+            alert("sucsess 200 " + dataJSON);
+          }
+        }
+      });
+
+    });
+
+  </script>
+</body>
+
+</html>
