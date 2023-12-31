@@ -153,9 +153,9 @@
                 <div class="relative mb-3 w-full">
                   <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase">Budget Flexibility</label>
                   <select name="entry.24480264" id="small" class="text-blueGray-600 placeholder-blueGray-300 placeholder-blueGray-300 text-blueGray-600 mb-6 block w-full rounded border-0 bg-white p-2 px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring">
-                    <option value="flexibility-20">Can Increase by 20% if necessary</option>
-                    <option value="flexibility-100">Budget is Very Flexible</option>
-                    <option value="flexibility-0">Above is My Maximum</option>
+                    <option value="Can Increase by 20% if necessary">Can Increase by 20% if necessary</option>
+                    <option value="Budget is Very Flexible">Budget is Very Flexible</option>
+                    <option value="Above is My Maximum">Above is My Maximum</option>
                   </select>
                 </div>
               </div>
@@ -179,9 +179,15 @@
               </div>
             </div>
           </form>
-          <!--
-          <iframe name="hidden-iframe" style="display: none;" onload="onloadFrame()"></iframe>
-          -->
+          <script type="text/javascript">
+            var submitted = false;
+          </script>
+          <iframe
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style="display: none"
+            onload="if(submitted)  {window.location='thanks.html';}"
+          ></iframe>
         </div>
       </div>
 
