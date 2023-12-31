@@ -21,6 +21,18 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <script>
+    // 送信完了フラグ: form submit時にtrueになる
+    let submitted = false;
+
+    const onloadFrame = () => {
+        // 送信完了の場合に指定ページに遷移させる
+        if (submitted) {
+            window.location = "thanks.html";
+        }
+    }
+  </script>
+
   <!-- jQueryのCDNを読み込む -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -179,15 +191,7 @@
               </div>
             </div>
           </form>
-          <script type="text/javascript">
-            var submitted = false;
-          </script>
-          <iframe
-            name="hidden_iframe"
-            id="hidden_iframe"
-            style="display: none"
-            onload="if(submitted) {window.alert('submitted'); window.location='thanks.html';}"
-          ></iframe>
+          <iframe name="hidden-iframe" style="display: none;" onload="onloadFrame()"></iframe>
         </div>
       </div>
 
