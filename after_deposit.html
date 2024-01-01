@@ -38,8 +38,36 @@
         </div>
         <div class="flex-auto px-4 py-10 pt-0 lg:px-10">
           <form id="after_deposit_form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYThXNaP1HZPC7oyvFFnWGkd0fejxA63r-d2ov6tC6927bMg/formResponse">
-            <h6 class="input-group-title text-blueGray-400 mb-6 mt-3 text-sm font-bold uppercase">Traveler 1</h6>
+            <h6 class="text-blueGray-400 mb-6 mt-3 text-sm font-bold uppercase">Emergency Information (Common for all travelers)</h6>
 
+            <div class="flex flex-wrap">
+              <div class="w-full px-4 lg:w-4/12">
+                <div class="relative mb-3 w-full">
+                  <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Contact Name </label>
+                  <input id="emergency_contact_name" name="emergency_contact_name" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="John Smith" required />
+                </div>
+              </div>
+              <div class="w-full px-4 lg:w-4/12">
+                <div class="relative mb-3 w-full">
+                  <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Relationship with Representative</label>
+                  <input id="emergency_contact_relationship" name="" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="Father" required />
+                </div>
+              </div>
+              <div class="w-full px-4 lg:w-4/12">
+                <div class="relative mb-3 w-full">
+                  <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Contact Phone Number </label>
+                  <input id="emergency_contact_phone" name="" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="+81 000-1111-2222" required />
+                </div>
+              </div>
+              <div class="w-full px-4 lg:w-12/12">
+                <div class="relative mb-3 w-full">
+                  <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Home Address </label>
+                  <input id="emergency_contact_home_address" name="home_address" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="4-3 Haneda-Kuko, 2-Chome, Ota-Ku, Tokyo 144, Japan" required />
+                </div>
+              </div>
+            </div>
+
+            <h6 class="input-group-title text-blueGray-400 mb-6 mt-3 text-sm font-bold uppercase">Traveler 1</h6>
             <div id="inputs">
               <div class="flex flex-wrap input-group">
 
@@ -53,121 +81,74 @@
                 <div class="w-full px-4 lg:w-6/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Passport Country </label>
-                    <input id="passport_country" name="passport_country" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="TK1234567" required />
+                    <input id="passport_country" name="passport_country" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="JPN" required />
                   </div>
                 </div>
 
-                <hr class="w-full mx-4 border-b-1 border-blueGray-300 mt-6 mb-6" />
 
-                <div class="w-full px-4 lg:w-6/12">
+                <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Arrival Date </label>
                     <input id="arrival_date" name="arrival_date" type="date" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="YYYY/MM/DD" value="" />
                   </div>
                 </div>
 
-                <div class="w-full px-4 lg:w-6/12">
+                <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Arrival Time </label>
                     <input id="arrival_time" name="arrival_time" type="time" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" value="" />
                   </div>
                 </div>
 
-                <div class="w-full px-4 lg:w-6/12">
+                <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Arrival Flight Number </label>
                     <input id="arrival_flight_number" name="arrival_flight_number" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="NH836" required />
                   </div>
                 </div>
 
-                <div class="w-full px-4 lg:w-6/12">
+                <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Arrival Airport </label>
-                    <input id="arrival_airport" name="arrival_airport" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
+                    <input id="arrival_airport" name="arrival_airport" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="NARITA" required />
                   </div>
                 </div>
 
-                <hr class="w-full mx-4 border-b-1 border-blueGray-300 mt-6 mb-6" />
 
-                <div class="w-full px-4 lg:w-6/12">
+
+                <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Departure Date </label>
                     <input id="departure_date" name="departure_date" type="date" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="YYYY/MM/DD" value="" />
                   </div>
                 </div>
 
-                <div class="w-full px-4 lg:w-6/12">
+                <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Departure Time </label>
                     <input id="departure_time" name="departure_time" type="time" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" value="" />
                   </div>
                 </div>
 
-                <div class="w-full px-4 lg:w-6/12">
+                <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Departure Flight Number </label>
-                    <input id="departure_flight_number" name="departure_flight_number" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="NH836" required />
+                    <input id="departure_flight_number" name="departure_flight_number" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="JL711" required />
                   </div>
                 </div>
 
-                <div class="w-full px-4 lg:w-6/12">
+                <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Departure Airport </label>
-                    <input id="departure_airport" name="departure_airport" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
+                    <input id="departure_airport" name="departure_airport" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="HANEDA" required />
                   </div>
                 </div>
 
-
-                <div class="w-full px-4 lg:w-6/12">
-                  <div class="relative mb-3 w-full">
-                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> ARRIVAL </label>
-                    <input id="" name="" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
-                  </div>
-                </div>
-                <div class="w-full px-4 lg:w-6/12">
-                  <div class="relative mb-3 w-full">
-                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> ARRIVAL </label>
-                    <input id="" name="" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
-                  </div>
-                </div>
-                <div class="w-full px-4 lg:w-6/12">
-                  <div class="relative mb-3 w-full">
-                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> ARRIVAL </label>
-                    <input id="" name="" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="" required />
-                  </div>
-                </div>
-
-
-
-                <div class="lg:w-6/12 w-full px-4">
-                  <div class="relative mb-3 w-full">
-                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase">Tatoo**</label>
-                    <select id="tatoo" class="text-blueGray-600 placeholder-blueGray-300 placeholder-blueGray-300 text-blueGray-600 mb-6 block w-full rounded border-0 bg-white p-2 px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring">
-                      <option selected value="no">No. I don't have tatoos</option>
-                      <option value="yes">Yes. I've got tatoos</option>
-                    </select>
-                  </div>
-                </div>
 
                 <div class="lg:w-12/12 w-full px-4">
                   <div class="relative mb-3 w-full">
-                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase">
-                      Dietary Requirements </label>
-                    <textarea id="dietary_requirements" name="dietary_requirements" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="Tell us about your dietary requiremnts"></textarea>
-                  </div>
-                </div>
-
-                <div class="lg:w-12/12 w-full px-4">
-                  <div class="relative mb-3 w-full">
-                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Medical Conditions (including allergies) </label>
-                    <textarea id="medical_conditions" name="medical_conditions" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="Tell us about your medical conditions"></textarea>
-                  </div>
-                </div>
-
-                <div class="lg:w-12/12 w-full px-4">
-                  <div class="relative mb-3 w-full">
-                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Mobility Issues </label>
-                    <textarea id="mobility_issues" name="mobility_issues" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="Tell us about your mobility issues"></textarea>
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Travel Insurence </label>
+                    <textarea id="travel_insurance" name="travel_insurance" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" rows="2" placeholder="(Optional) If you have purchased travel insurance, plese inform us 'Travel Provider' and 'Policy Number'"></textarea>
                   </div>
                 </div>
 
