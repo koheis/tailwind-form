@@ -56,7 +56,7 @@
               <div class="w-full px-4 lg:w-4/12">
                 <div class="relative mb-3 w-full">
                   <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Contact Phone Number </label>
-                  <input id="emergency_contact_phone" name="" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="+81 000-1111-2222" required />
+                  <input id="emergency_contact_phone" name="" type="tel" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="+81 000-1111-2222" required />
                 </div>
               </div>
               <div class="w-full px-4 lg:w-12/12">
@@ -71,20 +71,28 @@
             <div id="inputs">
               <div class="flex flex-wrap input-group">
 
-                <div class="w-full px-4 lg:w-6/12">
+                <div class="w-full px-4 lg:w-4/12">
+                  <div class="relative mb-3 w-full">
+                    <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Full Passport Name* </label>
+                    <input id="full_passport_name" name="full_passport_name" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="John Smith" required />
+                  </div>
+                </div>
+
+                <div class="w-full px-4 lg:w-4/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Passport Number </label>
                     <input id="passport_number" name="passport_number" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="TK1234567" required />
                   </div>
                 </div>
 
-                <div class="w-full px-4 lg:w-6/12">
+                <div class="w-full px-4 lg:w-4/12">
                   <div class="relative mb-3 w-full">
                     <label class="text-blueGray-600 mb-2 block text-xs font-bold uppercase"> Passport Country </label>
                     <input id="passport_country" name="passport_country" type="text" class="placeholder-blueGray-300 text-blueGray-600 w-full rounded border-0 bg-white px-3 py-3 text-sm shadow transition-all duration-150 ease-linear focus:outline-none focus:ring" placeholder="JPN" required />
                   </div>
                 </div>
 
+                <h6 class="text-blueGray-400 mb-3 mt-3 text-xs font-bold uppercase w-full px-4 lg:w-12/12">Arrival Flight Info</h6>
 
                 <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
@@ -114,7 +122,7 @@
                   </div>
                 </div>
 
-
+                <h6 class="text-blueGray-400 mb-3 mt-3 text-xs font-bold uppercase w-full px-4 lg:w-12/12">Departure Flight Info</h6>
 
                 <div class="w-full px-4 lg:w-3/12">
                   <div class="relative mb-3 w-full">
@@ -230,15 +238,31 @@
         // 1人分の情報を格納するオブジェクトを作成する
         var person = {};
         // inputの内容を取得してオブジェクトに追加する
+        person.full_passport_name = $(this).find("#full_passport_name").val();
         person.passport_number = $(this).find("#passport_number").val();
         person.passport_country = $(this).find("#passport_country").val();
         person.arrival_date = $(this).find("#arrival_date").val();
         person.arrival_time = $(this).find("#arrival_time").val();
         person.arrival_flight_number = $(this).find("#arrival_flight_number").val();
         person.arrival_airport = $(this).find("#arrival_airport").val();
+        person.departure_date = $(this).find("#departure_date").val();
+        person.departure_time = $(this).find("#departure_time").val();
+        person.departure_flight_number = $(this).find("#departure_flight_number").val();
+        person.departure_airport = $(this).find("#departure_airport").val();
+        person.travel_insurance = $(this).find("#travel_insurance").val();
         // 配列にオブジェクトを追加する
         data.push(person);
       });
+
+      //緊急連絡先を追加
+      var emergency = {};
+      emergency.emergency_contact_name = $("#emergency_contact_name").val();
+      emergency.emergency_contact_relationship = $("#emergency_contact_relationship").val();
+      emergency.emergency_contact_phone = $("#emergency_contact_phone").val();
+      emergency.emergency_contact_home_address = $("#emergency_contact_home_address").val();
+
+      data.push(emergency);
+
       // 配列をJSONフォーマットに変換する
       var dataJSON = JSON.stringify(data);
 
@@ -261,11 +285,12 @@
           0: function () {
             //成功した際の処理を書きます。
             alert("sucsess 0 " + dataJSON);
+            window.location = 'thanks.html';
           },
           200: function () {
             //成功した際の処理を書きます。
-
             alert("sucsess 200 " + dataJSON);
+            window.location = 'thanks.html';
           }
         }
       });
